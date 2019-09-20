@@ -1,0 +1,68 @@
+# //  ModelSim SE-64 6.4a Aug 28 2008 Linux 3.10.104-ITx64-rc1
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project ShiftReg
+# Error opening /home/anibar/SOC_exercise/ex4/syn/Untitled-1
+# Path name '/home/anibar/SOC_exercise/ex4/syn/Untitled-1' doesn't exist.
+# 1 file could not be opened in editor
+cd /home/anibar/SOC_exercise/ex4/post_sim
+# reading /soft/Mentor/Modelsim_6.4a/modeltech/linux_x86_64/../modelsim.ini
+# Loading project SR_post
+vmap fsd0a_a_generic_core /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/modelsim/Linux/fsd0a_a_generic_core
+# Modifying /home/anibar/SOC_exercise/ex4/post_sim/SR_post.mpf
+# Compile of netlist_syn.v was successful.
+# Compile of ShiftRegTB.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -L fsd0a_a_generic_core -sdftyp /shift_reg/ShiftReg=/home/anibar/SOC_exercise/ex4/post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.test_bench
+# vsim -L fsd0a_a_generic_core -sdftyp /shift_reg/ShiftReg=/home/anibar/SOC_exercise/ex4/post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.test_bench 
+# ** Error: (vsim-SDF-3196) Failed to find SDF file "/home/anibar/SOC_exercise/ex4/post_sim/syn.sdf".
+# Error loading design
+vsim -L fsd0a_a_generic_core -sdftyp /shift_reg/ShiftReg=/home/anibar/SOC_exercise/ex4/post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.test_bench
+# vsim -L fsd0a_a_generic_core -sdftyp /shift_reg/ShiftReg=/home/anibar/SOC_exercise/ex4/post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.test_bench 
+# ** Error: (vsim-SDF-3196) Failed to find SDF file "/home/anibar/SOC_exercise/ex4/post_sim/syn.sdf".
+# Error loading design
+vsim -L fsd0a_a_generic_core -sdftyp /shift_reg/ShiftReg=/home/anibar/SOC_exercise/ex4/post_sim/ShiftReg.sdf -sdfnoerror -sdfnowarn -t ps work.test_bench
+# vsim -L fsd0a_a_generic_core -sdftyp /shift_reg/ShiftReg=/home/anibar/SOC_exercise/ex4/post_sim/ShiftReg.sdf -sdfnoerror -sdfnowarn -t ps work.test_bench 
+# ** Note: (vsim-3812) Design is being optimized...
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(82571): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(82571): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(36376): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(36376): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(11486): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(11486): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(345): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(345): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(38122): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(38122): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(989): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(989): OPT VITAL: process 'vitalbehavior' optimized.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading verilog.vl_types(body)
+# Loading work.test_bench(test_fixture)#1
+# Loading work.ShiftReg(fast)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading fsd0a_a_generic_core.vtables
+# Loading fsd0a_a_generic_core.qdffrbx1(vital)#1
+# Loading fsd0a_a_generic_core.nd2xlp(vital)#1
+# Loading fsd0a_a_generic_core.aoi22xlp(vital)#1
+# Loading fsd0a_a_generic_core.an2b1xlp(vital)#1
+# Loading fsd0a_a_generic_core.nr2xlp(vital)#1
+# Loading fsd0a_a_generic_core.an2xlp(vital)#1
+# Loading instances from /home/anibar/SOC_exercise/ex4/post_sim/ShiftReg.sdf
+# Loading timing data from /home/anibar/SOC_exercise/ex4/post_sim/ShiftReg.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /test_bench  File: /home/anibar/SOC_exercise/ex4/post_sim/ShiftRegTB.vhd
+add wave -r /*
+run
+run
+run

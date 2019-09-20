@@ -1,0 +1,197 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/anibar/.cadence/rc.gui'.
+
+                       Cadence Encounter(R) RTL Compiler
+         Version RC9.1.203 - v09.10-s242_1 (32-bit), built Jul 14 2010
+
+
+Copyright notice: Copyright 1997-2009 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+Patent notices: Protected by U.S. Patents: 5892687; 6470486; 6772398; 6772399; 
+6807651; 6832357; 7007247 
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  dp_perform_rewriting_operations
+       design  lp_optimize_dynamic_power_first
+       design  multipass_mux_optimization
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+     instance  write_positional_connections
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  bit_blast_constants
+         root  bit_blast_mapped_ports
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  dp_perform_rewriting_operations
+         root  dp_perform_sharing_operations
+         root  exact_match_seqs_async_controls
+         root  gen_no_negative_index
+         root  gen_unconnected_port_style
+         root  gen_write_empty_module_for_logic_abstract
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  ple_parameter_source_priority
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_new_hier_comp
+         root  wlec_no_exit
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_verbose
+    subdesign  allow_sharing_subdesign
+    subdesign  dp_perform_rewriting_operations
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/> set_attribute lib_search_path /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7
+  Setting attribute of root '/': 'lib_search_path' = /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7
+rc:/> set_attribute lib_search_path /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/ /
+  Setting attribute of root '/': 'lib_search_path' = /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/
+rc:/> set_attribute library fsd0a_a_generic_core_1d2vtc.lib
+  Setting attribute of root '/': 'library' = fsd0a_a_generic_core_1d2vtc.lib
+rc:/> set_attribute hdl_vhdl_environment common
+  Setting attribute of root '/': 'hdl_vhdl_environment' = common
+rc:/> set_attribute hdl_vhdl_read_version 1993
+  Setting attribute of root '/': 'hdl_vhdl_read_version' = 1993
+rc:/> set_attribute hdl_language vhdl
+  Setting attribute of root '/': 'hdl_language' = vhdl
+rc:/> read_hdl ShiftReg.vhd
+rc:/> set_attribute hdl_vhdl_preferred_architecture "ShiftReg"
+  Setting attribute of root '/': 'hdl_vhdl_preferred_architecture' = ShiftReg
+rc:/> elaborate
+  Library has 453 usable logic and 145 usable sequential lib-cells.
+  Elaborating top-level block 'ShiftReg' from file 'ShiftReg.vhd'.
+  Done elaborating 'ShiftReg'.
+rc:/> define_clock -period 2000 -name clk [clock_ports]
+/designs/ShiftReg/timing/clock_domains/domain_1/clk
+rc:/> define_clock -period 4750 -name clk
+Warning : Replacing existing clock definition. [TIM-101]
+        : The clock name is 'clk'
+        : A new clock has been defined with the same name as an existing clock.
+/designs/ShiftReg/timing/clock_domains/domain_1/clk
+rc:/> set_attribute clock_network_late_latency 450 clk
+  Setting attribute of port 'clk': 'clock_network_late_latency' = 450.0 450.0 450.0 450.0
+rc:/> set_attribute clock_source_early_latency 400 clk
+  Setting attribute of port 'clk': 'clock_source_early_latency' = 400.0 400.0 400.0 400.0
+rc:/> set_attribute clock_setup_uncertainty 475 clk
+  Setting attribute of port 'clk': 'clock_setup_uncertainty' = 475.0 475.0
+rc:/> set_attribute clock_hold_uncertainty 270 clk
+  Setting attribute of port 'clk': 'clock_hold_uncertainty' = 270.0 270.0
+rc:/> external_delay -clock clk -input 100 [find /des* -port ports_in/*]
+/designs/ShiftReg/timing/external_delays/in_del_1
+rc:/> external_delay -clock clk -output 400 [find /des* -port ports_out/*]
+/designs/ShiftReg/timing/external_delays/ou_del_1
+rc:/> synthesize -to_mapped
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 1 hierarchical instance.
+        : Optimizations like for example constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+Mapping ShiftReg to gates.
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack: Unconstrained
+
+ 
+Global mapping status
+=====================
+                         Worst  
+                 Total    Neg   
+Operation         Area   Slack  Worst Path
+-------------------------------------------------------------------------------
+ global_map        163       0  N/A
+ 
+Global incremental target info
+==============================
+Cost Group 'default' target slack: Unconstrained
+
+ 
+Global incremental optimization status
+======================================
+                         Worst  
+                 Total    Neg   
+Operation         Area   Slack  Worst Path
+-------------------------------------------------------------------------------
+ global_inc        163       0  N/A
+                         Worst  - - - - DRC Totals - - - - 
+                 Total    Neg       Max       Max    Max   
+Operation         Area   Slack     Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_iopt         163       0         0        0        0
+ 
+Incremental optimization status
+===============================
+                         Worst  - - - - DRC Totals - - - - 
+                 Total    Neg       Max       Max    Max   
+Operation         Area   Slack     Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_delay        163       0         0        0        0
+ init_drc          163       0         0        0        0
+ init_area         163       0         0        0        0
+ 
+Incremental optimization status
+===============================
+                         Worst  - - - - DRC Totals - - - - 
+                 Total    Neg       Max       Max    Max   
+Operation         Area   Slack     Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_delay        163       0         0        0        0
+ init_drc          163       0         0        0        0
+ init_area         163       0         0        0        0
+
+  Done mapping ShiftReg
+  Synthesis succeeded.
+rc:/> write_hdl > netlist_syn.v
+rc:/> write_sdc > syn.sdc
+rc:/> write_sdf > syn.sdf
+rc:/> Exit
+invalid command name "Exit"
+rc:/> quit
