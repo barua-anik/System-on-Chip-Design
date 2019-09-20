@@ -1,0 +1,44 @@
+Warning: set_waveform_options has been set, but create_power_wavefroms is not used.  (PWR-257)
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Warning: No clock specified. 
+	 PT-Power will use default value of 1.0
+	 library time unit, for switching activity calculation.
+	 In order to calculate power accurately PT-Power needs to know 
+	 what frequency your design works on. For sequential design you 
+	 can specify the frequency by defining clock(s). For combinational 
+	 design you can specify the frequency by using command 
+	 'create_clock -name whatever_name -period your_design_period'. 
+
+  (PWR-171)
+****************************************
+Report : Statistical Average Power
+Design : counter
+Version: Z-2007.06-SP3
+Date   : Tue Apr 12 16:18:19 2016
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           1.200e-05 1.292e-05 3.708e-07 2.529e-05 (59.07%)  
+sequential              1.500e-05 2.202e-06 3.228e-07 1.753e-05 (40.93%)  
+
+  Net Switching Power  = 1.512e-05   (35.31%)
+  Cell Internal Power  = 2.700e-05   (63.07%)
+  Cell Leakage Power   = 6.936e-07   ( 1.62%)
+                         ---------
+Total Power            = 4.282e-05  (100.00%)
+
+1
