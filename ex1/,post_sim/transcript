@@ -1,0 +1,196 @@
+# //  ModelSim SE-64 6.4a Aug 28 2008 Linux 3.10.101
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project final_test
+# Compile of netlist_syn.v was successful.
+# Compile of tcounter.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -L fsd0a_a_generic_core -sdftyp /dut/counter= /home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.tcounter
+# vsim -L fsd0a_a_generic_core -sdftyp /dut/counter= -sdfnoerror -sdfnowarn -t ps work.tcounter 
+# ** Error: (vsim-SDF-3196) Failed to find SDF file "".
+# Error loading design
+vsim -L fsd0a_a_generic_core -sdftyp /dut/counter= /home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf -sdfnoerror -sdfnowarn -t pswork.tcounter
+# OpenFile /home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf 
+vmap fsd0a_a_generic_core /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/modelsim/Linux/fsd0a_a_generic_core
+# Modifying /home/anibar/SOC_exercise/ex1/,post_sim/final_test.mpf
+# Compile of netlist_syn.v was successful.
+# Compile of tcounter.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -L fsd0a_a_generic_core -sdftyp /dut/counter= /home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.tcounter
+# vsim -L fsd0a_a_generic_core -sdftyp /dut/counter= -sdfnoerror -sdfnowarn -t ps work.tcounter 
+# ** Error: (vsim-SDF-3196) Failed to find SDF file "".
+# Error loading design
+vsim -L fsd0a_a_generic_core -sdftyp /dut/counter=/home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.tcounter
+# vsim -L fsd0a_a_generic_core -sdftyp /dut/counter=/home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf -sdfnoerror -sdfnowarn -t ps work.tcounter 
+# ** Note: (vsim-3812) Design is being optimized...
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(82571): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(82571): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(43208): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(43208): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(49820): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(49820): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(6010): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(6010): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(44905): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(44905): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(10730): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(10730): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(33267): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(33267): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(50464): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(50464): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(43957): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(43957): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(38122): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(38122): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(989): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(989): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(12279): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(12279): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(42662): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(42662): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(9001): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(9001): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(37061): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(37061): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(2458): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(2458): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(11486): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(11486): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(89763): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(89763): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(36376): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(36376): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(22856): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(22856): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(65957): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(65957): OPT VITAL: process 'vitalbehavior' optimized.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tcounter(test)#1
+# Loading work.counter(fast)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading fsd0a_a_generic_core.vtables
+# Loading fsd0a_a_generic_core.qdffrbx1(vital)#1
+# Loading fsd0a_a_generic_core.oai112xlp(vital)#1
+# Loading fsd0a_a_generic_core.or2b1xlp(vital)#1
+# Loading fsd0a_a_generic_core.ao222xlp(vital)#1
+# Loading fsd0a_a_generic_core.oai12xlp(vital)#1
+# Loading fsd0a_a_generic_core.aoi222xlp(vital)#1
+# Loading fsd0a_a_generic_core.mxl2xlp(vital)#1
+# Loading fsd0a_a_generic_core.or2xlp(vital)#1
+# Loading fsd0a_a_generic_core.oai122xlp(vital)#1
+# Loading fsd0a_a_generic_core.nr2xlp(vital)#1
+# Loading fsd0a_a_generic_core.an2xlp(vital)#1
+# Loading fsd0a_a_generic_core.aoi23xlp(vital)#1
+# Loading fsd0a_a_generic_core.oa22xlp(vital)#1
+# Loading fsd0a_a_generic_core.aoi12xlp(vital)#1
+# Loading fsd0a_a_generic_core.nd3xlp(vital)#1
+# Loading fsd0a_a_generic_core.an3xlp(vital)#1
+# Loading fsd0a_a_generic_core.aoi22xlp(vital)#1
+# Loading fsd0a_a_generic_core.qdfzrbx1(vital)#1
+# Loading fsd0a_a_generic_core.nd2xlp(vital)#1
+# Loading fsd0a_a_generic_core.invckxlp(vital)#1
+# Loading fsd0a_a_generic_core.dffrbx1(vital)#1
+# Loading instances from /home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf
+# Loading timing data from /home/anibar/SOC_exercise/ex1/,post_sim/syn.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /tcounter  File: /home/anibar/SOC_exercise/ex1/,post_sim/tcounter.vhd
+add wave sim:/tcounter/*
+run -all
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 82.156 ns; Newly Scheduled Value := 0 @ 82.159 ns;
+#    Time: 82139 ps  Iteration: 0  Instance: /tcounter/dut/g920
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 162.19 ns; Newly Scheduled Value := 1 @ 162.209 ns;
+#    Time: 162165 ps  Iteration: 0  Instance: /tcounter/dut/g914
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 162.191 ns; Newly Scheduled Value := 1 @ 162.24 ns;
+#    Time: 162168 ps  Iteration: 0  Instance: /tcounter/dut/g905
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 162.191 ns; Newly Scheduled Value := 1 @ 162.244 ns;
+#    Time: 162173 ps  Iteration: 0  Instance: /tcounter/dut/g905
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 162.201 ns; Newly Scheduled Value := 0 @ 162.234 ns;
+#    Time: 162178 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 162.223 ns; Newly Scheduled Value := 0 @ 162.31 ns;
+#    Time: 162196 ps  Iteration: 0  Instance: /tcounter/dut/g900
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 162.201 ns; Newly Scheduled Value := 0 @ 162.29 ns;
+#    Time: 162197 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 162.214 ns; Newly Scheduled Value := 0 @ 162.226 ns;
+#    Time: 162209 ps  Iteration: 0  Instance: /tcounter/dut/g904
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 194.201 ns; Newly Scheduled Value := 0 @ 194.234 ns;
+#    Time: 194178 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 194.201 ns; Newly Scheduled Value := 0 @ 194.29 ns;
+#    Time: 194197 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 210.197 ns; Newly Scheduled Value := 0 @ 210.208 ns;
+#    Time: 210188 ps  Iteration: 0  Instance: /tcounter/dut/g920
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 226.201 ns; Newly Scheduled Value := 0 @ 226.234 ns;
+#    Time: 226178 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 226.201 ns; Newly Scheduled Value := 0 @ 226.29 ns;
+#    Time: 226197 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 240.069 ns; Newly Scheduled Value := 0 @ 240.113 ns;
+#    Time: 240048 ps  Iteration: 0  Instance: /tcounter/dut/g917
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 254.156 ns; Newly Scheduled Value := 0 @ 254.159 ns;
+#    Time: 254139 ps  Iteration: 0  Instance: /tcounter/dut/g920
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 254.187 ns; Newly Scheduled Value := 1 @ 254.207 ns;
+#    Time: 254159 ps  Iteration: 0  Instance: /tcounter/dut/g913
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 254.189 ns; Newly Scheduled Value := 1 @ 254.213 ns;
+#    Time: 254186 ps  Iteration: 0  Instance: /tcounter/dut/g912
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 254.228 ns; Newly Scheduled Value := 1 @ 254.272 ns;
+#    Time: 254212 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 254.237 ns; Newly Scheduled Value := 1 @ 254.249 ns;
+#    Time: 254213 ps  Iteration: 0  Instance: /tcounter/dut/g909
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 270.162 ns; Newly Scheduled Value := 0 @ 270.18 ns;
+#    Time: 270159 ps  Iteration: 0  Instance: /tcounter/dut/g926
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 270.17 ns; Newly Scheduled Value := 1 @ 270.194 ns;
+#    Time: 270159 ps  Iteration: 0  Instance: /tcounter/dut/g930
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 270.222 ns; Newly Scheduled Value := 0 @ 270.268 ns;
+#    Time: 270180 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port OB ; Preempted Future Value := X @ 270.199 ns; Newly Scheduled Value := 0 @ 270.209 ns;
+#    Time: 270194 ps  Iteration: 0  Instance: /tcounter/dut/g921
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 270.197 ns; Newly Scheduled Value := 0 @ 270.204 ns;
+#    Time: 270194 ps  Iteration: 0  Instance: /tcounter/dut/g923
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 286.143 ns; Newly Scheduled Value := 0 @ 286.149 ns;
+#    Time: 286139 ps  Iteration: 0  Instance: /tcounter/dut/g924
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 286.182 ns; Newly Scheduled Value := 0 @ 286.209 ns;
+#    Time: 286149 ps  Iteration: 0  Instance: /tcounter/dut/g917
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 286.158 ns; Newly Scheduled Value := 1 @ 286.186 ns;
+#    Time: 286149 ps  Iteration: 0  Instance: /tcounter/dut/g920
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 286.161 ns; Newly Scheduled Value := 1 @ 286.171 ns;
+#    Time: 286149 ps  Iteration: 0  Instance: /tcounter/dut/g915
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 286.193 ns; Newly Scheduled Value := 0 @ 286.197 ns;
+#    Time: 286171 ps  Iteration: 0  Instance: /tcounter/dut/g904
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 286.193 ns; Newly Scheduled Value := 0 @ 286.208 ns;
+#    Time: 286182 ps  Iteration: 0  Instance: /tcounter/dut/g904
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 286.202 ns; Newly Scheduled Value := 0 @ 286.209 ns;
+#    Time: 286186 ps  Iteration: 0  Instance: /tcounter/dut/g913
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 286.228 ns; Newly Scheduled Value := 1 @ 286.272 ns;
+#    Time: 286212 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 286.253 ns; Newly Scheduled Value := 1 @ 286.272 ns;
+#    Time: 286236 ps  Iteration: 0  Instance: /tcounter/dut/g909
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 302.162 ns; Newly Scheduled Value := 0 @ 302.18 ns;
+#    Time: 302159 ps  Iteration: 0  Instance: /tcounter/dut/g926
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 302.17 ns; Newly Scheduled Value := 1 @ 302.194 ns;
+#    Time: 302159 ps  Iteration: 0  Instance: /tcounter/dut/g930
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 302.222 ns; Newly Scheduled Value := 0 @ 302.268 ns;
+#    Time: 302180 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port OB ; Preempted Future Value := X @ 302.22 ns; Newly Scheduled Value := 1 @ 302.247 ns;
+#    Time: 302194 ps  Iteration: 0  Instance: /tcounter/dut/g921
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 318.156 ns; Newly Scheduled Value := 0 @ 318.159 ns;
+#    Time: 318139 ps  Iteration: 0  Instance: /tcounter/dut/g920
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 318.187 ns; Newly Scheduled Value := 1 @ 318.207 ns;
+#    Time: 318159 ps  Iteration: 0  Instance: /tcounter/dut/g913
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 318.228 ns; Newly Scheduled Value := 1 @ 318.272 ns;
+#    Time: 318212 ps  Iteration: 0  Instance: /tcounter/dut/g919
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 318.269 ns; Newly Scheduled Value := 1 @ 318.297 ns;
+#    Time: 318237 ps  Iteration: 0  Instance: /tcounter/dut/g900
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 320.179 ns; Newly Scheduled Value := 1 @ 320.199 ns;
+#    Time: 320139 ps  Iteration: 0  Instance: /tcounter/dut/g919
+run -all
+run
+run

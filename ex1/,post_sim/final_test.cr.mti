@@ -1,0 +1,15 @@
+/home/anibar/SOC_exercise/ex1/,post_sim/netlist_syn.v {1 {vlog -work work -vopt -nocovercells /home/anibar/SOC_exercise/ex1/,post_sim/netlist_syn.v
+Model Technology ModelSim SE-64 vlog 6.4a Compiler 2008.08 Aug 28 2008
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} /home/anibar/SOC_exercise/ex1/,post_sim/tcounter.vhd {1 {vcom -work work -2002 -explicit -vopt /home/anibar/SOC_exercise/ex1/,post_sim/tcounter.vhd
+Model Technology ModelSim SE-64 vcom 6.4a Compiler 2008.08 Aug 28 2008
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tcounter
+-- Compiling architecture test of tcounter
+
+} {} {}}
